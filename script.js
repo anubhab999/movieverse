@@ -1,36 +1,62 @@
-const movies = [
-  {
-    title: "Sacred Games",
-    platform: "Netflix",
-    year: 2018,
-    image: "https://placehold.co/200x300?text=Sacred+Games"
-  },
-  {
-    title: "Mirzapur",
-    platform: "Amazon Prime",
-    year: 2019,
-    image: "https://placehold.co/200x300?text=Mirzapur"
-  },
-  {
-    title: "Scam 1992",
-    platform: "SonyLIV",
-    year: 2020,
-    image: "https://placehold.co/200x300?text=Scam+1992"
-  },
-  // Add 150+ movies like this here or tell me to do it
-];
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
 
-const container = document.getElementById('movies-container');
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+}
 
-movies.forEach(movie => {
-  const card = document.createElement('div');
-  card.className = 'movie-card';
-  card.innerHTML = `
-    <img src="${movie.image}" alt="${movie.title}" />
-    <div class="info">
-      <div class="title">${movie.title}</div>
-      <div class="details">${movie.platform} | ${movie.year}</div>
-    </div>
-  `;
-  container.appendChild(card);
-});
+main {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-card {
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-card .info {
+  padding: 10px;
+}
+
+.movie-card .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.movie-card .details {
+  font-size: 14px;
+  color: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #1e1e1e;
+  color: #aaa;
+}

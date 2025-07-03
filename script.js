@@ -1,37 +1,34 @@
-// script.js
 const movies = [
-  { title: "Sacred Games", platform: "Netflix", year: 2018, image: "https://upload.wikimedia.org/wikipedia/en/9/91/Sacred_Games_Title_Card.jpg" },
-  { title: "Mirzapur", platform: "Amazon Prime", year: 2018, image: "https://upload.wikimedia.org/wikipedia/en/d/d4/Mirzapur_Poster.jpg" },
-  { title: "Scam 1992", platform: "SonyLIV", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/e/e6/Scam_1992_-_The_Harshad_Mehta_Story.jpg" },
-  { title: "The Family Man", platform: "Amazon Prime", year: 2019, image: "https://upload.wikimedia.org/wikipedia/en/d/dd/The_Family_Man.jpeg" },
-  { title: "Delhi Crime", platform: "Netflix", year: 2019, image: "https://upload.wikimedia.org/wikipedia/en/6/6f/Delhi_Crime_poster.jpg" },
-  { title: "Panchayat", platform: "Amazon Prime", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/0/05/Panchayat_web_series.jpeg" },
-  { title: "Kota Factory", platform: "Netflix", year: 2019, image: "https://upload.wikimedia.org/wikipedia/en/d/de/Kota_Factory_poster.jpg" },
-  { title: "Asur", platform: "JioCinema", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/1/10/Asur_OTT_poster.jpg" },
-  { title: "Gullak", platform: "SonyLIV", year: 2019, image: "https://upload.wikimedia.org/wikipedia/en/2/25/Gullak_poster.jpg" },
-  { title: "Rocket Boys", platform: "SonyLIV", year: 2022, image: "https://upload.wikimedia.org/wikipedia/en/9/9a/Rocket_Boys.jpg" },
-  { title: "Paatal Lok", platform: "Amazon Prime", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/5/57/Paatal_Lok.jpeg" },
-  { title: "Special OPS", platform: "Disney+ Hotstar", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/c/ca/Special_OPS.jpg" },
-  { title: "Made in Heaven", platform: "Amazon Prime", year: 2019, image: "https://upload.wikimedia.org/wikipedia/en/4/41/Made_in_Heaven.jpeg" },
-  { title: "Breathe", platform: "Amazon Prime", year: 2018, image: "https://upload.wikimedia.org/wikipedia/en/3/3e/Breathe_OTCP.jpg" },
-  { title: "Hostel Daze", platform: "Amazon Prime", year: 2019, image: "https://upload.wikimedia.org/wikipedia/en/5/5e/Hostel_Daze.jpeg" },
-  { title: "TVF Pitchers", platform: "TVFPlay", year: 2015, image: "https://upload.wikimedia.org/wikipedia/en/5/5b/Pitchers.jpg" },
-  { title: "Masaba Masaba", platform: "Netflix", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/f/f1/Masaba_Masaba.jpeg" },
-  { title: "Bombay Begums", platform: "Netflix", year: 2021, image: "https://upload.wikimedia.org/wikipedia/en/a/a0/Bombay_Begums_poster.jpg" },
-  { title: "Yeh Kaali Kaali Ankhein", platform: "Netflix", year: 2022, image: "https://upload.wikimedia.org/wikipedia/en/a/af/Yeh_Kaali_Kaali_Ankhein.jpg" },
-  { title: "Jamtara", platform: "Netflix", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/6/61/Jamtara.jpeg" },
-  { title: "Undekhi", platform: "SonyLIV", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/1/1e/Undekhi.jpeg" },
-  { title: "Aarya", platform: "Disney+ Hotstar", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/7/7f/Aarya.jpeg" },
-  { title: "Criminal Justice", platform: "Hotstar", year: 2019, image: "https://upload.wikimedia.org/wikipedia/en/f/f1/Criminal_Justice.jpeg" },
-  { title: "The Forgotten Army", platform: "Amazon Prime", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/3/38/Forgotten_Army.jpeg" },
-  { title: "Runs v Agents", platform: "Netflix", year: 2021, image: "https://upload.wikimedia.org/wikipedia/en/1/17/Runs_v_Agents.jpeg" },
-  { title: "Tandav", platform: "Amazon Prime", year: 2021, image: "https://upload.wikimedia.org/wikipedia/en/a/ae/Tandav.jpeg" },
-  { title: "Apharan", platform: "Alt Balaji", year: 2018, image: "https://upload.wikimedia.org/wikipedia/en/4/43/Apharan.jpeg" },
-  { title: "Raktanchal", platform: "MX Player", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/9/9d/Raktanchal.jpeg" },
-  { title: "Kaafir", platform: "Zee5", year: 2019, image: "https://upload.wikimedia.org/wikipedia/en/5/57/Kaafir.jpeg" },
-  { title: "RejctX", platform: "MX Player", year: 2020, image: "https://upload.wikimedia.org/wikipedia/en/7/75/RejctX.jpeg" },
-  { title: "Lock Upp", platform: "ALTBalaji", year: 2022, image: "https://upload.wikimedia.org/wikipedia/en/5/5a/Lock_Upp.jpeg" },
-  { title: "Grahan", platform: "Hotstar", year: 2021, image: "https://upload.wikimedia.org/wikipedia/en/9/9f/Grahan.jpeg" },
-  { title: "Candy", platform: "Voot", year: 2021, image: "https://upload.wikimedia.org/wikipedia/en/f/fc/Candy.jpeg" },
-  // ... Continue until you have 150+ entries
+  { title: "Sacred Games", platform: "Netflix", year: 2018 },
+  { title: "Mirzapur", platform: "Amazon Prime", year: 2019 },
+  { title: "Scam 1992", platform: "SonyLIV", year: 2020 },
+  { title: "Delhi Crime", platform: "Netflix", year: 2019 },
+  { title: "The Family Man", platform: "Amazon Prime", year: 2019 },
+  { title: "Asur", platform: "JioCinema", year: 2020 },
+  { title: "Paatal Lok", platform: "Amazon Prime", year: 2020 },
+  { title: "Kota Factory", platform: "Netflix", year: 2019 },
+  { title: "TVF Pitchers", platform: "TVF", year: 2015 },
+  { title: "Hostel Daze", platform: "Amazon Prime", year: 2019 },
+  { title: "Lakhon Mein Ek", platform: "Amazon Prime", year: 2017 },
+  { title: "Breathe", platform: "Amazon Prime", year: 2018 },
+  { title: "Ray", platform: "Netflix", year: 2021 },
+  { title: "Jamtara", platform: "Netflix", year: 2020 },
+  { title: "Made in Heaven", platform: "Amazon Prime", year: 2019 },
+  { title: "Betaal", platform: "Netflix", year: 2020 },
+  { title: "Bard of Blood", platform: "Netflix", year: 2019 },
+  { title: "Taj Mahal 1989", platform: "Netflix", year: 2020 },
+  { title: "Inside Edge", platform: "Amazon Prime", year: 2017 },
+  // 👇 130+ aur bhi add karna ho to bata
 ];
+
+const container = document.getElementById("movies-container");
+
+movies.forEach(movie => {
+  const card = document.createElement("div");
+  card.className = "movie-card";
+  card.innerHTML = `
+    <div class="title">${movie.title}</div>
+    <div class="details">${movie.platform} | ${movie.year}</div>
+  `;
+  container.appendChild(card);
+});
